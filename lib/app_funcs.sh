@@ -41,7 +41,7 @@ function app_dependencies() {
   unset GIT_DIR
 
   output_section "Fetching app dependencies with mix"
-  mix deps.get --only prod || exit 1
+  mix deps.get || exit 1
 
   output_section "Compiling app dependencies"
   mix deps.compile || exit 1
