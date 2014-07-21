@@ -67,7 +67,7 @@ function install_elixir() {
   cp -R $(elixir_build_path) $(elixir_path)
   chmod +x $(elixir_path)/bin/*
   PATH=$(elixir_path)/bin:$PATH
-  export MIX_ENV=prod
+  export MIX_ENV=dev
 }
 
 
